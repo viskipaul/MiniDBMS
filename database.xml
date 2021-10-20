@@ -1,2 +1,3 @@
 <Databases>
-</Databases>
+
+<Database name="B"><Table tableName="bb"><Attribute name="d" type="int" /><Attribute name="e" type="varchar(255)" /><Attribute name="f" type="int" /><Attribute name="g" type="varchar(255)" /></Table></Database></Databases>
