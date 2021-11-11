@@ -1,0 +1,5 @@
+
+
+create table tabel3 ( tabel1id int foreign key references tabel2 id )
+
+create index index1 on tabel1 (id)

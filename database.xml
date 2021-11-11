@@ -1,3 +1,16 @@
 <Databases>
-
-<Database name="B"><Table tableName="bb"><Attribute name="d" type="int" /><Attribute name="e" type="varchar(255)" /><Attribute name="f" type="int" /><Attribute name="g" type="varchar(255)" /></Table></Database></Databases>
+<Database name="db1">
+    <Table tableName="tabel1">
+        <Attribute is_null="false" name="id" primary_key="true" type="int" />
+        <Attribute is_null="true" name="nume" primary_key="false" type="varchar" />
+        <Index indexName="index1" unique="0"><IndexAttribute attributeName="id" /></Index></Table>
+    <Table tableName="tabel2">
+        <Attribute is_null="false" name="id" primary_key="true" type="int" />
+        <Attribute is_null="true" name="model" primary_key="false" type="varchar" />
+    </Table>
+    <Table tableName="tabel3">
+        <Attribute is_null="true" name="tabel1id" primary_key="false" type="int" />
+        <ForeignKey attribute="tabel1id" ref_attribute="id" ref_table="tabel2" />
+</Table>
+</Database>
+</Databases>
