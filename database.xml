@@ -7,10 +7,19 @@
     <Table tableName="tabel2">
         <Attribute is_null="false" name="id" primary_key="true" type="int" />
         <Attribute is_null="true" name="model" primary_key="false" type="varchar" />
+    <Index indexName="index1" unique="0">
+        <IndexAttribute attributeName="id" />
+        <IndexAttribute attributeName="model" />
+    </Index>
     </Table>
     <Table tableName="tabel3">
         <Attribute is_null="true" name="tabel1id" primary_key="false" type="int" />
         <ForeignKey attribute="tabel1id" ref_attribute="id" ref_table="tabel2" />
+</Table>
+<Table tableName="table4"><Attribute is_null="false" name="id" primary_key="true" type="int" /><Attribute is_null="true" name="nume" primary_key="false" type="varchar" /></Table><Table tableName="tabel5"><Attribute is_null="true" name="id" primary_key="false" type="int" /><Attribute is_null="true" name="telefon" primary_key="false" type="varchar" /></Table><Table tableName="table6">
+    <Attribute is_null="true" name="id" primary_key="false" type="int" />
+    <Attribute is_null="true" name="nume" primary_key="false" type="varchar" />
+    <ForeignKey attribute="id" ref_attribute="id" ref_table="tabel5" />
 </Table>
 </Database>
 </Databases>
